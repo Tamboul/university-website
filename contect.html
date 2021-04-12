@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- section -->
+    <section class="sub-header">
+      <div class="container">
+        <nav>
+          <a href="index.html"><img src="./images/logo.png" alt="" /></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="course.html">COURSE</a></li>
+              <li><a href="blog.html">BLOG</a></li>
+              <li><a href="contect.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h2>Contact Us</h2>
+      </div>
+    </section>
+    <!-- /section -->
+
+    <section class="location">
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15934.160078781217!2d101.6435878586965!3d3.2146899373218005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc464e3efffcef%3A0x69d9d6874ff9faf2!2sJinjang%20Health%20Clinic!5e0!3m2!1sen!2smy!4v1618215665129!5m2!1sen!2smy"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+    <!-- contact-us -->
+    <section class="contact-us">
+      <div class="container">
+        <div class="row">
+          <div class="contact-col">
+            <div>
+              <i class="fa fa-home fa-lg"></i>
+              <span>
+                <h5>XYZ Road ABC Building</h5>
+                <p>Kuala Lumpour, Buokit</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa fa-phone fa-lg"></i>
+              <span>
+                <h5>+1 012345678</h5>
+                <p>Monday to Saturday, 10AM to 6PM</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa fa-envelope-o fa-lg"></i>
+              <span>
+                <h5>info@easyt.com</h5>
+                <p>Email us your query</p>
+              </span>
+            </div>
+          </div>
+          <div class="contact-col">
+            <form action="form-handler.php" method="POST">
+              <input type="text" name="name" placeholder="Enter your name" />
+              <input type="email" name="email" placeholder="Enter your email" />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Enter your subject"
+              />
+              <textarea
+                rows="5"
+                name="message"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /contact-us -->
+
+    <!-- Footer -->
+    <section class="footer">
+      <p>Made with <i class="fa fa-heart-o fa-lg"></i> by Easy Tutorials</p>
+      <div class="icons">
+        <i class="fa fa-linkedin fa-lg"></i>
+        <i class="fa fa-twitter fa-lg"></i>
+        <i class="fa fa-instagram fa-lg"></i>
+        <i class="fa fa-facebook fa-lg"></i>
+      </div>
+    </section>
+    <!-- /Footer -->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
